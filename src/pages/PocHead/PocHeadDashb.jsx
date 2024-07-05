@@ -1,22 +1,7 @@
 import  { useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import './PocHeadDashb.css';
-
-function Header() {
-    return (
-      <div className="header">
-        <div className="header-left">
-          <div className="logo-container">
-            <div className="logo"></div>
-            <span className="title">EIEMS</span>
-          </div>
-        </div>
-        <div className="header-right">
-          <i className="bi bi-bell icon"></i>
-        </div>
-      </div>
-    );
-  }
+import Header from '../../components/Header';
 
   function Sidebar({ setActiveComponent }) {
     return (
