@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} /> 
         <Route path="/forgot-password" element={<ForgotPass />} />
-        <Route path="/admin-dashboard/*" element={<PocHeadDashb />} />
-        <Route path="/collegepoc-dashboard/*" element={<CollegePocDashb />} />
-        <Route path="/student-dashboard/*" element={<StudentDashb />} />
+        <Route path="/pochead/*" element={<PocHeadDashb />} />
+        <Route path="/collegepoc/*" element={<CollegePocDashb />} />
+        <Route path="/student/*" element={<StudentDashb />} />
 
       </Routes>
     </BrowserRouter>

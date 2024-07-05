@@ -1,4 +1,5 @@
-import { Route, Routes, Link} from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { Route, Routes, NavLink, useNavigate} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
 
@@ -18,35 +19,47 @@ import Header from '../../components/Header';
 //   }
 
   function Sidebar() {
+
+    const navigate = useNavigate();
+
+    const isMounted = useRef(false);
+
+    useEffect(()=>{
+      if(!isMounted.current){
+        isMounted.current = true;
+        navigate('/pochead/dashboard');
+      }
+    }, [navigate]);
+
     return (
       <div className="sidebar">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to='/admin-dashboard' className="nav-link">
+            <NavLink to='dashboard' className="nav-link">
               <i className="bi bi-grid-1x2-fill icon"></i>Dashboard
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to='/admin-dashboard/active-college-pocs' className="nav-link" >
+            <NavLink to='active-college-pocs' className="nav-link" >
               <i className="bi bi-person-workspace icon"></i>Active College POCs
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to='/admin-dashboard/implementing-subjects' className="nav-link">
+            <NavLink to='implementing-subjects' className="nav-link">
               <i className="bi bi-book-fill icon"></i>Implementing Subjects
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <ul className="logout-nav-list">
           <li className="nav-item">
-            <Link to='/admin-dashboard/profile' className="nav-link">
+            <NavLink to='profile' className="nav-link">
               <i className="bi bi-person-circle icon"></i>Profile
-            </Link>
+            </NavLink>
           </li> 
           <li className="nav-item">
-            <Link to='/' className="nav-link">
+            <NavLink to='/' className="nav-link">
               <i className="bi bi-box-arrow-left icon"></i>Logout
-            </Link>
+            </NavLink>
           </li>  
         </ul>
       </div>
@@ -93,7 +106,7 @@ function PocHeadDashb(){
           <Sidebar />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="dashboard" element={<Dashboard />} />
               <Route path="active-college-pocs" element={<ActiveCollegePOCs />} />
               <Route path="implementing-subjects" element={<ImplementingSubjects />} />
               <Route path="profile" element={<Profile />} />

@@ -1,32 +1,45 @@
+import { useEffect, useRef } from 'react';
 import Header from '../../components/Header';
 import './StudentDashb.css';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, NavLink, useNavigate } from 'react-router-dom';
 
 function Sidebar() {
+
+    const navigate = useNavigate();
+
+    const isMounted = useRef(false);
+
+    useEffect(()=>{
+      if(!isMounted.current){
+        isMounted.current = true;
+        navigate('/student/dashboard');
+      }
+    }, [navigate]);
+
     return (
       <div className="sidebar">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to='/student-dashboard' className="nav-link">
+            <NavLink to='dashboard' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-grid-1x2-fill icon"></i>Dashboard
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to='/student-dashboard/classroom' className="nav-link">
+            <NavLink to='classroom' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-person-workspace icon"></i>Classroom
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <ul className="logout-nav-list">
           <li className="nav-item">
-            <Link to='/student-dashboard/profile' className="nav-link">
+            <NavLink to='profile' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-person-circle icon"></i>Profile
-            </Link>
+            </NavLink>
           </li> 
           <li className="nav-item">
-            <Link to='/' className="nav-link">
+            <NavLink to='/' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-box-arrow-left icon"></i>Logout
-            </Link>
+            </NavLink>
           </li>  
         </ul>
       </div>
@@ -64,7 +77,7 @@ const StudentDashb = () => {
           <Sidebar />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="dashboard" element={<Dashboard />} />
               <Route path="classroom" element={<Classroom />} />
               <Route path="profile" element={<Profile />} />
             </Routes>
