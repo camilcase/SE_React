@@ -18,7 +18,7 @@ function ForgotPass() {
       <div className='title'><h5>EIE Management System</h5></div>
       <div className='subtitle'><p>Forgot Password</p></div>
 
-      <div className='content'>
+      <div className='contentt'>
         <form className='forgot-form'>
           <div className='input-group'>
             <label htmlFor='email'>Email:</label>
