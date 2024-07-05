@@ -1,24 +1,38 @@
-import  { useState } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, Link} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
 
-  function Sidebar({ setActiveComponent }) {
+// function Header() {
+//     return (
+//       <div className="header">
+//         <div className="header-left">
+//           <div className="logo-container">
+//             <div className="logo"></div>
+//             <span className="title">EIEMS</span>
+//           </div>g//         </div>
+//         <div className="header-right">
+//           <i className="bi bi-bell icon"></i>
+//         </div>
+//       </div>
+//     );
+//   }
+
+  function Sidebar() {
     return (
       <div className="sidebar">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to='/admin-dashboard' className="nav-link" onClick={() => setActiveComponent('Dashboard')}>
+            <Link to='/admin-dashboard' className="nav-link">
               <i className="bi bi-grid-1x2-fill icon"></i>Dashboard
             </Link>
           </li>
           <li className="nav-item">
-            <Link to='/admin-dashboard/active-college-pocs' className="nav-link" onClick={() => setActiveComponent('ActiveCollegePOCs')}>
+            <Link to='/admin-dashboard/active-college-pocs' className="nav-link" >
               <i className="bi bi-person-workspace icon"></i>Active College POCs
             </Link>
           </li>
           <li className="nav-item">
-            <Link to='/admin-dashboard/implementing-subjects' className="nav-link" onClick={() => setActiveComponent('ImplementingSubjects')}>
+            <Link to='/admin-dashboard/implementing-subjects' className="nav-link">
               <i className="bi bi-book-fill icon"></i>Implementing Subjects
             </Link>
           </li>
@@ -71,13 +85,12 @@ import Header from '../../components/Header';
   }
 
 function PocHeadDashb(){
-    const [activeComponent, setActiveComponent] = useState('Dashboard');
-
+  
     return (
       <div className="admin-page">
         <Header />
         <div className="main-layout">
-          <Sidebar setActiveComponent={setActiveComponent} />
+          <Sidebar />
           <div className="content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
