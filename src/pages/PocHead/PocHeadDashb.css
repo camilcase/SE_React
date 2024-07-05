@@ -58,6 +58,7 @@ body, html, #root {
   bottom: 0;
   width: 260px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: 1rem;
   background-color: #ffffff;
@@ -92,14 +93,14 @@ body, html, #root {
   list-style-type: none;
   margin-top: 5rem;
   padding: 0;
-  flex-grow: 1;
+
 }
 
 .nav-list {
   list-style-type: none;
   margin-top: 20px;
   padding: 0;
-  flex-grow: 1;
+
 }
 
 .nav-item {

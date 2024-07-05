@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<LoginPage />} /> 
         <Route path="/forgot-password" element={<ForgotPass />} />
         <Route path="/admin-dashboard/*" element={<PocHeadDashb />} />
+
       </Routes>
     </BrowserRouter>
   );

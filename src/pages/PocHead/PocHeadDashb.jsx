@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes, Link} from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import './PocHeadDashb.css';
 
 function Header() {
@@ -55,10 +55,10 @@ function Header() {
   }
 
   function Dashboard() {
-    return <div>Dashboard Content</div>;
+    return <div>Dashboard</div>;
   }
   
-  function ActiveCollegePOCs() {
+  export function ActiveCollegePOCs() {
     return <div>Active College POCs Content</div>;
   }
   
