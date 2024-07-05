@@ -56,10 +56,10 @@ function Header() {
   }
 
   function Dashboard() {
-    return <div>Dashboard Content</div>;
+    return <div>Dashboard</div>;
   }
   
-  function ActiveCollegePOCs() {
+  export function ActiveCollegePOCs() {
     return (
         <div className="active-college-pocs-container">
             <h1 className="college-title">College of Computer Studies</h1>
