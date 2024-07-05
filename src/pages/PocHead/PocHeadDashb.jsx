@@ -56,7 +56,12 @@ function Header() {
   }
 
   function Dashboard() {
-    return <div>Dashboard</div>;
+    return (
+      <div className="active-college-pocs-container">
+        <h1 className="college-title">College of Computer Studies</h1>
+        <span className="active-pocs-label">Dashboard</span>
+      </div>
+    )
   }
   
   export function ActiveCollegePOCs() {
@@ -69,7 +74,12 @@ function Header() {
   }
   
   function ImplementingSubjects() {
-    return <div>Implementing Subjects Content</div>;
+    return (
+      <div className="active-college-pocs-container">
+          <h1 className="college-title">College of Computer Studies</h1>
+          <span className="active-pocs-label">Implementing Subjects</span>
+      </div>
+  );
   }
   
   function Profile() {
