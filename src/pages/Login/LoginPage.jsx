@@ -1,7 +1,14 @@
-import { Link }from 'react-router-dom';
+import React from 'react';
+import { Link, useNavigate }from 'react-router-dom';
 import './LoginPage.css';
 
 function LoginPage() {
+  const navigate= useNavigate();
+
+  const handleLogin= () => {
+    navigate('/admin-dashboard');
+  };
+  
   return (
     <div className='login-page'>
       <div className='logos'>
@@ -10,7 +17,7 @@ function LoginPage() {
       </div> 
       <div className='title'><h5>EIE Management System</h5></div>
 
-      <div className='content'>
+      <div className='contents'>
         <form className='login-form'>
           <div className='input-group'>
             <label htmlFor='username'>Username:</label>
@@ -24,7 +31,7 @@ function LoginPage() {
       </div>
       <div className='footer'>
         <Link to='/forgot-password' className='forgot-password'>Forgot Password?</Link>
-        <button type='submit' className='login-button'>Login</button>
+        <button onClick={handleLogin} type='submit' className='login-button'>Login</button>
       </div>
     </div>
   );
