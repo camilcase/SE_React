@@ -1,0 +1,127 @@
+.login-page {
+    background-image: url('../../../public/assets/eiebackg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -30px; 
+}
+
+.unc-logo {
+    background-image: url('../../../public/assets/unclogo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 100px;
+    margin-right: 10px; /* Adjust spacing between logos */
+}
+
+.eie-logo {
+    background-image: url('../../../public/assets/eielogo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0; /* No margin */
+}
+
+.content {
+    width: 100%;
+    max-width: 500px; 
+    text-align: left;
+    margin-top: 0px; /* Space between logos and content */
+}
+
+.title {
+    margin: 3px 0 0px 5px; /* Minimal space around title */
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    font-size: 38px; 
+    color: #0187F1;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 7px;
+    margin-left: 70px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 28%;
+    padding: 10px;
+    background-color: #0187F1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #015c9a; /* Change background color on hover */
+}
+
+.forgot-password {
+    
+    margin-left: 20px;
+    margin-right: 50px;
+    color: #0187F1;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 20px;
+}
