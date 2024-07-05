@@ -1,138 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins&display=swap');
-
 body, html, #root {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-.admin-page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #F1F1F1;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  z-index: 1;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.header .icon {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  cursor: pointer;
-}
-
-.main-layout {
-  display: flex;
-  flex-grow: 1;
-  margin-top: 70px; /* height of the header */
-  margin-left: 290px;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
   
-}
+  .admin-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F1F1F1;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .main-layout {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 70px; /* height of the header */
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  .logo {
+    background-image: url('../../../public/assets/eielogo.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .title {
+    font-family: 'Krona One', sans-serif;
+    color: #383838;
+    margin-left: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+  
+  .logout-nav-list {
+    list-style-type: none;
+    margin-top: 5rem;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .nav-item {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #343a40;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+  
+  .nav-link:hover {
+    color: #0056b3;
+  }
+  
+  .nav-item.active .nav-link {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .icon {
+    margin-right: 1rem;
+  }
+  
+  .content {
+    flex-grow: 1;
+    margin-left: 300px; 
+    padding: 1rem;
+    background-color: #F1F1F1;
+    overflow-y: auto;
+    height: calc(100vh - 70px); /* full height minus header */
+  }
+  
+  .active-college-pocs-container {
+    padding: 10px;
+  }
+  
+  .college-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-top: 10px;
+  }
+  
+  .active-pocs-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #383838;
+    margin: 0;
+  }
+  
 
-.sidebar {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  bottom: 0;
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 1.8rem;
-  margin-left: 1rem;
-}
-
-.logo {
-  background-image: url('../../../public/assets/eielogo.png');
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.title {
-  font-family: 'Krona One', sans-serif;
-  color: #383838;
-  margin-left: 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 400;
-}
-
-.logout-nav-list {
-  list-style-type: none;
-  margin-top: 5rem;
-  padding: 0;
-  flex-grow: 1;
-}
-
-.nav-list {
-  list-style-type: none;
-  margin-top: 20px;
-  padding: 0;
-  flex-grow: 1;
-}
-
-.nav-item {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.nav-link {
-  font-family: 'Poppins', sans-serif;
-  color: #343a40;
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-.nav-link:hover {
-  color: #0056b3;
-}
-
-.nav-item.active .nav-link {
-  color: #0056b3;
-  font-weight: bold;
-}
-
-.icon {
-  margin-right: 1rem;
-}
-
-.content {
-  flex-grow: 1;
-  margin-top: 50px;
-  margin-left: 60px; /* width of the sidebar */
-  padding: 1rem;
-  background-color: #F1F1F1;
-  overflow-y: auto;
-}
 

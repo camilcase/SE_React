@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
+import { Dropdown, Button, Form, InputGroup } from 'react-bootstrap';
 import './PocHeadDashb.css';
 
 function Header() {
@@ -59,7 +60,12 @@ function Header() {
   }
   
   function ActiveCollegePOCs() {
-    return <div>Active College POCs Content</div>;
+    return (
+        <div className="active-college-pocs-container">
+            <h1 className="college-title">College of Computer Studies</h1>
+            <span className="active-pocs-label">Active College POCs</span>
+        </div>
+    );
   }
   
   function ImplementingSubjects() {
