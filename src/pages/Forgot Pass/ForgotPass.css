@@ -1,5 +1,5 @@
 .forgot-page {
-    background-image: url('../../../public/assets/eiebackg.png');
+    background-image: url('/assets/eiebackg.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,7 +19,7 @@
 }
 
 .unc-logo {
-    background-image: url('../../../public/assets/unclogo.png');
+    background-image: url('/assets/unclogo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .eie-logo {
-    background-image: url('../../../public/assets/eielogo.png');
+    background-image: url('/assets/eielogo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
