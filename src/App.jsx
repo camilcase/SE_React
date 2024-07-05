@@ -4,6 +4,7 @@ import LoginPage from './pages/Login/LoginPage'
 import ForgotPass from './pages/Forgot Pass/ForgotPass'
 import PocHeadDashb from './pages/PocHead/PocHeadDashb'
 import CollegePocDashb from './pages/CollegePoc/CollegePocDashb'
+import StudentDashb from './pages/Student/StudentDashb'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPass />} />
         <Route path="/admin-dashboard/*" element={<PocHeadDashb />} />
         <Route path="/collegepoc-dashboard/*" element={<CollegePocDashb />} />
+        <Route path="/student-dashboard/*" element={<StudentDashb />} />
 
       </Routes>
     </BrowserRouter>
