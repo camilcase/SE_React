@@ -41,7 +41,7 @@ body, html, #root {
   }
   
   .logo {
-    background-image: url('../../../public/assets/eielogo.png');
+    background-image: url('/assets/eielogo.png');
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -118,6 +118,10 @@ body, html, #root {
     font-weight: 500;
     color: #383838;
     margin: 0;
+  }
+
+  .sample{
+    background-color: black;
   }
   
 

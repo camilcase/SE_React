@@ -7,7 +7,7 @@ function Sidebar() {
       <div className="sidebar">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to='/collegepoc-dashboard' className="nav-link">
+            <Link to='/collegepoc-dashboard' className="nav-link" activeClassName='sample'>
               <i className="bi bi-grid-1x2-fill icon"></i>Dashboard
             </Link>
           </li>

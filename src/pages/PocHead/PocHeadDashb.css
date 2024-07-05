@@ -12,6 +12,36 @@ body, html, #root {
     background-color: #F1F1F1;
   }
   
+  /* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  } */
+  
   .main-layout {
     display: flex;
     flex-grow: 1;
@@ -41,7 +71,7 @@ body, html, #root {
   }
   
   .logo {
-    background-image: url('../../../public/assets/eielogo.png');
+    background-image: url('/assets/eielogo.png');
     width: 50px;
     height: 50px;
     background-size: cover;
