@@ -1,4 +1,3 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './ForgotPass.css';
 
@@ -31,7 +30,7 @@ function ForgotPass() {
         </form>
       </div>
       <div className='footer'>
-        <button onClick={handleCancel} className='cancel-button'>Cancel</button>
+        <button onClick={handleCancel} className='cancel-btn'>Cancel</button>
         <button type='submit' className='submit-button'>Submit</button>
       </div>
     </div>
