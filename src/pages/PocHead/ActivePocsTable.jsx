@@ -10,7 +10,7 @@ const Table = ({data}) => {
           <tr>
             <th>No.</th>
             <th>Code</th>
-            <th>Course</th>
+            <th>Implementing Subjects</th>
             <th>Year Level</th>
             <th>Assigned POC</th>
             <th>Actions</th>
@@ -25,6 +25,8 @@ const Table = ({data}) => {
               <td>{row.yearLevel}</td>
               <td>{row.assignedPOC}</td>
               <td>
+                <button className="upload-button"><i className='bi bi-upload icon'></i></button>
+                <button className="reassign-button">Re-Assign POC</button>
                 <div className='button-group'>
                 <button className="upload-button"><i className='bi bi-upload'></i></button>
                 <button className="reassign-button">Re-Assign POC</button>

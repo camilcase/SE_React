@@ -3,8 +3,24 @@ import { Route, Routes, NavLink, useNavigate} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
 import Table from './ActivePocsTable';
+import ImplementSubjects from './ImplementSubjects';
 
-const data = [
+const activepocdata = [
+  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 3, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 4, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 5, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 6, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 7, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 8, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 9, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 10, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  
+
+];
+
+const implementSubdata = [
   { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 3, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
@@ -82,7 +98,7 @@ const data = [
         <div className="active-college-pocs-container">
             <h1 className="college-title">College of Computer Studies</h1>
             <span className="active-pocs-label">Active College POCs</span>
-            <Table data={data}/>
+            <Table data={activepocdata}/>
         </div>
     );
   }
@@ -92,6 +108,7 @@ const data = [
       <div className="active-college-pocs-container">
           <h1 className="college-title">College of Computer Studies</h1>
           <span className="active-pocs-label">Implementing Subjects</span>
+          <ImplementSubjects data={implementSubdata}/>
       </div>
   );
   }
