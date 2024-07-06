@@ -125,12 +125,17 @@ body, html, #root {
   .active-college-pocs-container {
     padding: 10px;
   }
-  
+  .scrollable-table-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+  }
   .college-title {
     font-size: 24px;
     font-weight: bold;
     color: #1a73e8;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .active-pocs-label {
@@ -138,28 +143,33 @@ body, html, #root {
     font-weight: 500;
     color: #383838;
     margin: 0;
+    
   }
   
   .icon{
     margin-right: 0.2rem;
   }
-  
-
 
   .pocs-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    border: 2px solid #ddd;
+    background-color: #ffffff;
   }
   
   .pocs-table th, .pocs-table td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 8px;
+    text-align: center;
   }
   
   .pocs-table th {
-    background-color: #f2f2f2;
-    text-align: left;
+    background-color: #CACBD2;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
   
   .upload-button, .reassign-button {

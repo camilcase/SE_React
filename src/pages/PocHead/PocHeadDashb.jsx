@@ -2,11 +2,18 @@ import { useEffect, useRef } from 'react';
 import { Route, Routes, NavLink, useNavigate} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
-import Table from '../../components/Table';
+import Table from './ActivePocsTable';
 
 const data = [
   { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },{ no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+
 ];
 
   function Sidebar() {
