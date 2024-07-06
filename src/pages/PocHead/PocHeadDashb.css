@@ -73,7 +73,7 @@ body, html, #root {
   }
   
   .nav-item {
-    margin: 1rem;
+    margin: 0.5rem !important;
     height: 4rem;
     width: 15rem;
     background-color: #FCF7F8;
@@ -132,6 +132,24 @@ body, html, #root {
     overflow-y: scroll;
   }
 
+  .scrollable-table-container::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  .scrollable-table-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .scrollable-table-container::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .scrollable-table-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
   thead{
     position: sticky;
