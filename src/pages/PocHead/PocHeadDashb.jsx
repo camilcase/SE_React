@@ -13,6 +13,9 @@ const data = [
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },{ no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  
 
 ];
 
