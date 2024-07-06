@@ -76,7 +76,7 @@ body, html, #root {
     margin: 0.5rem !important;
     height: 4rem;
     width: 15rem;
-    background-color: #FCF7F8;
+    background-color: white !important;
     text-decoration: none;
     color: black;
     border-radius: 15px;
