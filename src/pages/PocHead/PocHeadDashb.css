@@ -16,7 +16,7 @@ body, html, #root {
   .main-layout {
     display: flex;
     flex-grow: 1;
-    margin-top: 70px; 
+    margin-top: 70px; /* height of the header */
   }
   
   .sidebar {
@@ -119,23 +119,31 @@ body, html, #root {
     padding: 1rem;
     background-color: #F1F1F1;
     overflow-y: auto;
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 70px); /* full height minus header */
   }
   
   .active-college-pocs-container {
     padding: 10px;
   }
+
   .scrollable-table-container {
-    max-height: 400px; 
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: 20px;
+    max-height: 28rem;
+    margin: 1rem;
+    overflow-y: scroll;
   }
+
+
+  thead{
+    position: sticky;
+    width: 100%;
+    top:0;
+  }
+
   .college-title {
     font-size: 24px;
     font-weight: bold;
     color: #1a73e8;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   
   .active-pocs-label {
@@ -143,33 +151,36 @@ body, html, #root {
     font-weight: 500;
     color: #383838;
     margin: 0;
-    
   }
   
   .icon{
     margin-right: 0.2rem;
   }
-
+  
   .pocs-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    border: 2px solid #ddd;
-    background-color: #ffffff;
+    background: white;
   }
   
   .pocs-table th, .pocs-table td {
-    border: 2px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    
   }
   
   .pocs-table th {
-    background-color: #CACBD2;
+    background-color: #6B6D76;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  }
+
+  .button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem
   }
   
   .upload-button, .reassign-button {
@@ -187,5 +198,5 @@ body, html, #root {
   }
   
   .reassign-button {
-    background-color: #15b62b; 
+    background-color: green;
   }

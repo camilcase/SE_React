@@ -7,14 +7,14 @@ import Table from './ActivePocsTable';
 const data = [
   { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },{ no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
-  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 3, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 4, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 5, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 6, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 7, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 8, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 9, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 10, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
   
 
 ];
