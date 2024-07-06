@@ -3,21 +3,6 @@ import { Route, Routes, NavLink, useNavigate} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
 
-// function Header() {
-//     return (
-//       <div className="header">
-//         <div className="header-left">
-//           <div className="logo-container">
-//             <div className="logo"></div>
-//             <span className="title">EIEMS</span>
-//           </div>g//         </div>
-//         <div className="header-right">
-//           <i className="bi bi-bell icon"></i>
-//         </div>
-//       </div>
-//     );
-//   }
-
   function Sidebar() {
 
     const navigate = useNavigate();
@@ -35,29 +20,29 @@ import Header from '../../components/Header';
       <div className="sidebar">
         <ul className="nav-list">
           <li className="nav-item">
-            <NavLink to='dashboard' className="nav-link">
+            <NavLink to='dashboard' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-grid-1x2-fill icon"></i>Dashboard
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to='active-college-pocs' className="nav-link" >
+            <NavLink to='active-college-pocs' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-person-workspace icon"></i>Active College POCs
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to='implementing-subjects' className="nav-link">
+            <NavLink to='implementing-subjects' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-book-fill icon"></i>Implementing Subjects
             </NavLink>
           </li>
         </ul>
         <ul className="logout-nav-list">
           <li className="nav-item">
-            <NavLink to='profile' className="nav-link">
+            <NavLink to='profile' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-person-circle icon"></i>Profile
             </NavLink>
           </li> 
           <li className="nav-item">
-            <NavLink to='/' className="nav-link">
+            <NavLink to='/' className={({isActive}) => (isActive ? 'nav-item-active' : 'nav-link')}>
               <i className="bi bi-box-arrow-left icon"></i>Logout
             </NavLink>
           </li>  
