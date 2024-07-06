@@ -57,10 +57,29 @@ function Sidebar() {
   
   export function ClassManagement() {
     return (
-        <div className="dashb-college-pocs-container">
-            <h1 className="college-title">EIE Implementing Subjects</h1>
-            {/* <span className="active-pocs-label">Class</span> */}
-        </div>
+      <div className="dashb-students-container">
+      <h1 className="college-title">EIE Implementing Subjects</h1>
+      <div className='subjects-cont'>
+          <NavLink to='pnc' className='subject-box'>
+              <div className='subject-header'>
+                  <h2>PNC</h2>
+                  <span>BIT111</span>
+              </div>
+              <div className='subject-body'>
+                  <p>Chin Borela</p>
+              </div>
+          </NavLink>
+          <NavLink to='quamet2' className='subject-box'>
+              <div className='subject-header'>
+                  <h2>QUAMET 2</h2>
+                  <span>BIT312</span>
+              </div>
+              <div className='subject-body'>
+                  <p>Dennis Ignacio</p>
+              </div>
+          </NavLink>
+      </div>
+  </div>
     );
   }
   

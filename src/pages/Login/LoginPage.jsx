@@ -6,7 +6,7 @@ function LoginPage() {
 
   const handleLogin= () => {
     // /pochead/dashboard /collegepoc/dashboard /student/dashboard
-    navigate('/student/dashboard');
+    navigate('/collegepoc/dashboard');
   };
   
   return (

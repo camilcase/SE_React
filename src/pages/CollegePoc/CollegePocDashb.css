@@ -103,7 +103,7 @@ body, html, #root {
   }
   
   .dashb-college-pocs-container {
-    padding: 10px;
+    padding: 20px;
   }
   
   .college-title {
@@ -111,6 +111,7 @@ body, html, #root {
     font-weight: bold;
     color: #1a73e8;
     margin-top: 10px;
+    margin-bottom: 30px;
   }
   
   .dashb-pocs-label {
@@ -124,5 +125,56 @@ body, html, #root {
     background-color: black;
   }
   
+  .subjects-cont {
+    display: flex;
+    gap: 40px; 
+    flex-wrap: wrap; 
+}
+
+.subjects-cont a{
+  text-decoration: none;
+}
+
+.subject-box {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject-header {
+    background-color: #cce7ff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subject-header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #383838; 
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.subject-header span {
+    font-size: 12px;
+    color: #464444; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.subject-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-body p {
+    margin: 0;
+    color: #555; 
+    font-family: 'Poppins', sans-serif ;
+}
 
 
