@@ -49,7 +49,7 @@ function Sidebar() {
   function Dashboard() {
     return (
       <div className="dashb-students-container">
-        <h1 className="college-title">College of Computer Studies</h1>
+        <h1 className="college-title">Monthly EIE Performance Summary</h1>
         <span className="dashb-studs-label">Dashboard</span>
       </div>
     );
@@ -57,9 +57,28 @@ function Sidebar() {
 
   export function Classroom() {
     return (
-        <div className="dashb-students-container">
+      <div className="dashb-students-container">
             <h1 className="college-title">EIE Implementing Subjects</h1>
-            {/* <span className="active-pocs-label">Class</span> */}
+            <div className='subjects-cont'>
+                <NavLink to='pnc' className='subject-box'>
+                    <div className='subject-header'>
+                        <h2>PNC</h2>
+                        <span>BIT111</span>
+                    </div>
+                    <div className='subject-body'>
+                        <p>Chin Borela</p>
+                    </div>
+                </NavLink>
+                <NavLink to='quamet2' className='subject-box'>
+                    <div className='subject-header'>
+                        <h2>QUAMET 2</h2>
+                        <span>BIT312</span>
+                    </div>
+                    <div className='subject-body'>
+                        <p>Dennis Ignacio</p>
+                    </div>
+                </NavLink>
+            </div>
         </div>
     );
   }
@@ -88,3 +107,4 @@ const StudentDashb = () => {
 }
 
 export default StudentDashb
+
