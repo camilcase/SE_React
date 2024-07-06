@@ -2,6 +2,12 @@ import { useEffect, useRef } from 'react';
 import { Route, Routes, NavLink, useNavigate} from 'react-router-dom';
 import './PocHeadDashb.css';
 import Header from '../../components/Header';
+import Table from '../../components/Table';
+
+const data = [
+  { no: 1, code: 'BIT323k', course: 'Advanced Software Engineering', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+  { no: 2, code: 'BCS323k', course: 'Software Engineering 2', yearLevel: '3rd Year', assignedPOC: 'JUNAR DANILA' },
+];
 
   function Sidebar() {
 
@@ -60,11 +66,13 @@ import Header from '../../components/Header';
     )
   }
   
+  
   export function ActiveCollegePOCs() {
     return (
         <div className="active-college-pocs-container">
             <h1 className="college-title">College of Computer Studies</h1>
             <span className="active-pocs-label">Active College POCs</span>
+            <Table data={data}/>
         </div>
     );
   }
