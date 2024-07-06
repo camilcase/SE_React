@@ -44,9 +44,11 @@ const ImplementSubjects = ({ data }) => {
               <td>{row.course}</td>
               <td>{row.yearLevel}</td>
               <td>
+                <div className='button-group'>
                 <button className="assignpoc-button" onClick={() => openModal(row)}>
                   Assign POC
                 </button>
+                </div>
               </td>
             </tr>
           ))}

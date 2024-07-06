@@ -25,8 +25,6 @@ const Table = ({data}) => {
               <td>{row.yearLevel}</td>
               <td>{row.assignedPOC}</td>
               <td>
-                <button className="upload-button"><i className='bi bi-upload icon'></i></button>
-                <button className="reassign-button">Re-Assign POC</button>
                 <div className='button-group'>
                 <button className="upload-button"><i className='bi bi-upload'></i></button>
                 <button className="reassign-button">Re-Assign POC</button>
