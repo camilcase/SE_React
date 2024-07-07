@@ -60,22 +60,20 @@ function Sidebar() {
       <div className="dashb-students-container">
       <h1 className="college-title">EIE Implementing Subjects</h1>
       <div className='subjects-cont'>
-          <NavLink to='pnc' className='subject-box'>
+          <NavLink to='pnc/bit111' className='subject-box'>
               <div className='subject-header'>
                   <h2>PNC</h2>
-                  <span>BIT111</span>
               </div>
               <div className='subject-body'>
-                  <p>Chin Borela</p>
+                  <p>BIT111</p>
               </div>
           </NavLink>
-          <NavLink to='quamet2' className='subject-box'>
+          <NavLink to='pnc/bcs311' className='subject-box'>
               <div className='subject-header'>
-                  <h2>QUAMET 2</h2>
-                  <span>BIT312</span>
+                  <h2>PNC</h2>
               </div>
               <div className='subject-body'>
-                  <p>Dennis Ignacio</p>
+                  <p>BCS311</p>
               </div>
           </NavLink>
       </div>
@@ -101,6 +99,7 @@ const CollegePocDashb = () => {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="class-management" element={<ClassManagement />} />
               <Route path="profile" element={<Profile />} />
+          
             </Routes>
           </div>
         </div>

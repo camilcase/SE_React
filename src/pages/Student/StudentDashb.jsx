@@ -2,6 +2,9 @@ import { useEffect, useRef } from 'react';
 import Header from '../../components/Header';
 import './StudentDashb.css';
 import { Route, Routes, NavLink, useNavigate } from 'react-router-dom';
+import './Tasks';
+import Tasks from './Tasks';
+import TaskDetails from './TaskDetails';
 
 function Sidebar() {
 
@@ -60,7 +63,7 @@ function Sidebar() {
       <div className="dashb-students-container">
             <h1 className="college-title">EIE Implementing Subjects</h1>
             <div className='subjects-cont'>
-                <NavLink to='pnc' className='subject-box'>
+                <NavLink to='subject' className='subject-box'>
                     <div className='subject-header'>
                         <h2>PNC</h2>
                         <span>BIT111</span>
@@ -99,6 +102,9 @@ const StudentDashb = () => {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="classroom" element={<Classroom />} />
               <Route path="profile" element={<Profile />} />
+              <Route path='classroom/subject' element={<Tasks/>}/>
+              <Route path="classroom/subject/:id" element={<TaskDetails />} />
+
             </Routes>
           </div>
         </div>

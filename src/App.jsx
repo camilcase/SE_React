@@ -16,7 +16,6 @@ function App() {
         <Route path="/pochead/*" element={<PocHeadDashb />} />
         <Route path="/collegepoc/*" element={<CollegePocDashb />} />
         <Route path="/student/*" element={<StudentDashb />} />
-
       </Routes>
     </BrowserRouter>
   );
