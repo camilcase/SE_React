@@ -2,6 +2,7 @@ import { useEffect,useRef } from 'react';
 import Header from '../../components/Header';
 import './CollegePocDashb.css';
 import { Route, Routes, NavLink, useNavigate } from 'react-router-dom';
+import TaskCreation from './TaskCreation';
 
 function Sidebar() {
 
@@ -60,7 +61,7 @@ function Sidebar() {
       <div className="dashb-students-container">
       <h1 className="college-title">EIE Implementing Subjects</h1>
       <div className='subjects-cont'>
-          <NavLink to='pnc/bit111' className='subject-box'>
+          <NavLink to='task-manage' className='subject-box'>
               <div className='subject-header'>
                   <h2>PNC</h2>
               </div>
@@ -81,8 +82,6 @@ function Sidebar() {
     );
   }
   
-  
-  
   function Profile() {
     return <div>Profile Content</div>;
   }
@@ -99,6 +98,7 @@ const CollegePocDashb = () => {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="class-management" element={<ClassManagement />} />
               <Route path="profile" element={<Profile />} />
+              <Route path='class-management/task-manage' element={<TaskCreation/>}/>
           
             </Routes>
           </div>
