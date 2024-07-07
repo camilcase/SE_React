@@ -7,7 +7,7 @@ const PopupForm = ({ onClose }) => {
       <div className="popup-form-overlay">
         <div className="popup-form">
           <div className="popup-form-header">
-            <h2>Create new EIE task</h2>
+            <h2>Create new EIE Task</h2>
             <button className="close-button" onClick={onClose}>×</button>
           </div>
           <form>

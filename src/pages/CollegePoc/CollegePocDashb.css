@@ -210,10 +210,10 @@ body, html, #root {
 
 .popup-form {
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 2rem;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 300px;
 }
 
 .popup-form-header {
@@ -235,7 +235,7 @@ body, html, #root {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-group label {
@@ -245,23 +245,26 @@ body, html, #root {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 95%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #383838;
   border-radius: 4px;
 }
 
 .form-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+ display:flex;
+align-items: flex-end;
+ justify-content:flex-end;
+  gap: 5px;
 }
 
 .form-buttons button {
+
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .form-buttons button[type="button"] {
@@ -269,6 +272,7 @@ body, html, #root {
 }
 
 .form-buttons button[type="submit"] {
+  
   background-color: #1a73e8;
   color: white;
 }
