@@ -1,11 +1,10 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LoginPage from './pages/Login/LoginPage'
-import ForgotPass from './pages/Forgot Pass/ForgotPass'
+import ForgotPass from './pages/ForgotPass/ForgotPass'
 import PocHeadDashb from './pages/PocHead/PocHeadDashb'
 import CollegePocDashb from './pages/CollegePoc/CollegePocDashb'
 import StudentDashb from './pages/Student/StudentDashb'
-
 
 function App() {
   return (
