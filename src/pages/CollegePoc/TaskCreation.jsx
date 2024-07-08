@@ -3,7 +3,6 @@ import './CollegePocDashb.css';
 import PropTypes from 'prop-types';
 import{ useEffect } from 'react';
 
-<<<<<<< Updated upstream
 const PopupForm = ({ onClose }) => {
     return (
       <div className="popup-form-overlay">
@@ -41,7 +40,6 @@ const PopupForm = ({ onClose }) => {
   
   PopupForm.propTypes = {
     onClose: PropTypes.func.isRequired,
-=======
 const PopupForm = ({ onClose, addTask, task }) => {
   const [topic, setTopic] = useState('');
   const [instructions, setInstructions] = useState('');
@@ -66,7 +64,6 @@ const PopupForm = ({ onClose, addTask, task }) => {
     e.preventDefault();
     const newTask = { topic, instructions, dueDate, time };
     addTask(newTask);
->>>>>>> Stashed changes
   };
 
   return (
