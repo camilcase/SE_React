@@ -3,7 +3,7 @@ import './CollegePocDashb.css';
 import PropTypes from 'prop-types';
 import{ useEffect } from 'react';
 
-const PopupForm = ({ onClose }) => {
+/*const PopupForm = ({ onClose }) => {
     return (
       <div className="popup-form-overlay">
         <div className="popup-form">
@@ -40,6 +40,8 @@ const PopupForm = ({ onClose }) => {
   
   PopupForm.propTypes = {
     onClose: PropTypes.func.isRequired,
+  }
+*/
 const PopupForm = ({ onClose, addTask, task }) => {
   const [topic, setTopic] = useState('');
   const [instructions, setInstructions] = useState('');
