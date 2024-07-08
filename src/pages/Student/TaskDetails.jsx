@@ -55,6 +55,7 @@ const TaskDetails = () => {
 
             </div>
             <div className="task-details-right">
+                <h4>Grades:</h4>
                 <h3>EPGF Average</h3>
                 <p>Pronunciation</p>
                 <p>Grammar</p>
