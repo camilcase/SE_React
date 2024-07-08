@@ -280,3 +280,65 @@ align-items: flex-end;
 .form-buttons button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-actions {
+  position: relative;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.task-actions:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
