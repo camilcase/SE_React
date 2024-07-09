@@ -70,6 +70,7 @@ const PopupForm = ({ onClose, addTask, task }) => {
               />
               {errors.topic && <div className="error-message">{errors.topic}</div>}
             </div>
+          
             <div className="form-group">
               <label>Instructions</label>
               <textarea
@@ -159,8 +160,17 @@ const PopupForm = ({ onClose, addTask, task }) => {
           {tasks.map((task, index) => (
             <div key={index} className="task-item" onClick={() => viewTaskDetails(task)}>
               <div className="task-content">
-                <p>{task.topic}</p>
+              <p className="date"> Due Date: {task.dueDate} {task.time}</p>
+                <h4 >Topic: {task.topic}</h4>
+                <h5 className="instructions">Instructions:</h5>
+                <p>{task.instructions}</p>
+  
+               
+           
+          
               </div>
+           
+
               <div className="task-actions">
                 <button className="menu-button" onClick={(e) => e.stopPropagation()}>⋮</button>
                 <div className="dropdown-menu">

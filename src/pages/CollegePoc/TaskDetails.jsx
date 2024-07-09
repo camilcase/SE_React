@@ -15,7 +15,7 @@ const TaskDetails = () => {
   }
 
   const students = [
-    { id: 1, name: 'Jude Adolfo', dateSubmitted: '12/1/2023', dueDate: '12/30/2023', submitted: 'On time', links: 'https://clickme.com', cefrCategory: 'B2 Upper Intermediate', epgfAverage: '2.14', proficiencyLevel: 'Approaching' },
+    { id: 1, name: 'Christine Joy Cleofe', dateSubmitted: '12/1/2023', dueDate: '12/30/2023', submitted: 'On time', links: 'https://clickme.com', cefrCategory: 'B2 Upper Intermediate', epgfAverage: '2.14', proficiencyLevel: 'Approaching' },
     { id: 2, name: 'Camille Abang', dateSubmitted: '12/3/2023', dueDate: '12/30/2023', submitted: 'Late', links: 'https://clickme.com', cefrCategory: 'B2 upper intermediate', epgfAverage: '3.00', proficiencyLevel: 'Developing' },
     { id: 3, name: 'Jude Adolfo', dateSubmitted: '12/1/2023', dueDate: '12/30/2023', submitted: 'On time', links: 'https://clickme.com', cefrCategory: 'beginning', epgfAverage: '2.50', proficiencyLevel: 'Proficient' },
     { id: 4, name: 'Camille Abang', dateSubmitted: '12/3/2023', dueDate: '12/30/2023', submitted: 'Late', links: 'https://clickme.com', cefrCategory: 'beginning', epgfAverage: '1.50', proficiencyLevel: 'Beginner' },

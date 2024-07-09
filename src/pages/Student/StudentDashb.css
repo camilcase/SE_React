@@ -255,7 +255,7 @@ body, html, #root {
 }
 
 .filter-dropdown select {
-    padding: 10px;
+    padding: 9px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
@@ -268,9 +268,9 @@ body, html, #root {
   justify-content: center;
   align-items: flex-start;
   background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  /*border-radius: 3px;*/
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   gap: 20px;
 }
 
@@ -374,19 +374,20 @@ body, html, #root {
 
 .task-details-right {
   flex: 1;
-  background-color: #f1f1f1;
+  background-color: rgba(158, 206, 243, 0.2);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .task-details-right h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   color: #555;
+
 }
  
 .task-details-right h4{
@@ -397,9 +398,9 @@ body, html, #root {
 .feedback-textarea {
   width: 100%;
   height: 100px;
-  padding: 3px;
+  padding: 2px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 14px;
   resize: none; 
 }

@@ -140,6 +140,7 @@ const TaskDetails = () => {
                 <p>Fluency</p>
                 <h3>Proficiency</h3>
                 <h3>CEFR Category</h3>
+                <p>Feedback:</p>
                 <textarea placeholder="Feedback:" className="feedback-textarea" readOnly></textarea>
             </div>
         </div>
