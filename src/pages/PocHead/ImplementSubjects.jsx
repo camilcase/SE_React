@@ -20,7 +20,7 @@ const ImplementSubjects = ({ data }) => {
   };
 
   const handleAssign = () => {
-    // Handle the assign action here
+    //assign action
     closeModal();
   };
 

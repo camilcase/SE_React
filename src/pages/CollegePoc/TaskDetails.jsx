@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './CollegePocDashb.css';
+import Evaluation from './Evaluation'; 
 
 const TaskDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { task } = location.state || {};
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentStudent, setCurrentStudent] = useState(null);
 
   if (!task) {
     return <div>No task selected</div>;
@@ -17,6 +21,16 @@ const TaskDetails = () => {
     { id: 4, name: 'Camille Abang', dateSubmitted: '12/3/2023', dueDate: '12/30/2023', submitted: 'Late', links: 'https://clickme.com', cefrCategory: 'beginning', epgfAverage: '1.50', proficiencyLevel: 'Beginner' },
     { id: 5, name: 'Jude Adolfo', dateSubmitted: '12/1/2023', dueDate: '12/30/2023', submitted: 'On time', links: 'https://clickme.com', cefrCategory: 'beginning', epgfAverage: '3.00', proficiencyLevel: 'Developing' },
   ];
+
+  const handleEvaluateClick = (student) => {
+    setCurrentStudent(student);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setCurrentStudent(null);
+  };
 
   return (
     <>
@@ -50,7 +64,7 @@ const TaskDetails = () => {
                 <td>{student.epgfAverage}</td>
                 <td>{student.proficiencyLevel}</td>
                 <td>
-                  <button className="evaluate-button">Evaluate</button>
+                  <button className="evaluate-button" onClick={() => handleEvaluateClick(student)}>Evaluate</button>
                 </td>
               </tr>
             ))}
@@ -58,6 +72,7 @@ const TaskDetails = () => {
         </table>
       </div>
       <button className="back-button" onClick={() => navigate(-1)}>Back</button>
+      {isPopupOpen && <Evaluation student={currentStudent} onClose={closePopup} />}
     </>
   );
 };

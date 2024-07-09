@@ -262,7 +262,7 @@ body, html, #root {
     font-size: 14px;
 }
 
-/* Add the necessary styles for the TaskDetails component */
+/* TaskDetails component */
 .task-details-container {
   display: flex;
   justify-content: center;

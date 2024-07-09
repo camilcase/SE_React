@@ -380,17 +380,14 @@ body, html, #root {
   width: 3px;
 }
 
-/* Track */
 .scrollable-table-container::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
  
-/* Handle */
 .scrollable-table-container::-webkit-scrollbar-thumb {
   background: #888; 
 }
   
-/* Handle on hover */
 .scrollable-table-container::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
@@ -441,4 +438,114 @@ body, html, #root {
 
 .back-button:hover {
   background-color: #0056b3;
+}
+
+.eval-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eval-popup-form {
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: #007bff;
+}
+
+.eval-form-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.eval-form-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.eval-feedback-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eval-feedback-section h3 {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eval-feedback-section textarea {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eval-form-group {
+  margin-bottom: 10px;
+}
+
+.eval-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: #383838;
+}
+
+.eval-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.eval-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.eval-form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.eval-form-buttons button[type="button"] {
+  background-color: #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eval-form-buttons button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eval-form-buttons button[type="submit"]:hover {
+  background-color: #0056b3;
+  font-family: 'Poppins', sans-serif;
 }
