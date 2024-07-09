@@ -15,7 +15,7 @@ function Sidebar() {
     useEffect(()=>{
       if(!isMounted.current){
         isMounted.current = true;
-        navigate('/student/dashboard');
+        navigate('/student/classroom');
       }
     }, [navigate]);
 

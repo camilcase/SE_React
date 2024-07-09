@@ -20,10 +20,10 @@ function LoginPage() {
           navigate('/pochead/dashboard');
           break;
         case 'collegepoc':
-          navigate('/collegepoc/dashboard');
+          navigate('/class-management');
           break;
         case 'student':
-          navigate('/student/dashboard');
+          navigate('/student/classroom');
           break;
         default:
           alert('Role not recognized');

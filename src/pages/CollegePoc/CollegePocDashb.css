@@ -195,6 +195,7 @@ body, html, #root {
   background-color: #0056b3; 
 }
 
+/* PopupForm Component */
 .popup-form-overlay {
   position: fixed;
   top: 0;
@@ -234,6 +235,12 @@ body, html, #root {
   cursor: pointer;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
 .form-group {
   margin-bottom: 10px;
 }
@@ -252,19 +259,17 @@ body, html, #root {
 }
 
 .form-buttons {
- display:flex;
-align-items: flex-end;
- justify-content:flex-end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 5px;
 }
 
 .form-buttons button {
-
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 .form-buttons button[type="button"] {
@@ -272,7 +277,6 @@ align-items: flex-end;
 }
 
 .form-buttons button[type="submit"] {
-  
   background-color: #1a73e8;
   color: white;
 }
@@ -281,7 +285,7 @@ align-items: flex-end;
   background-color: #0056b3;
 }
 
-/* Task List */
+
 .task-list {
   margin-top: 20px;
 }
@@ -341,4 +345,100 @@ align-items: flex-end;
 
 .dropdown-menu button:hover {
   background-color: #f1f1f1;
+}
+
+/* Task Details */
+
+.task-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding-bottom: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.task-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a73e8;
+  margin-top: 20px;
+  
+}
+
+.scrollable-table-container {
+  max-height: 28rem;
+  margin: 1rem;
+  overflow-y: scroll;
+}
+
+.scrollable-table-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.scrollable-table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.scrollable-table-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+  
+/* Handle on hover */
+.scrollable-table-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.students-table th,
+.students-table td {
+  border: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.students-table th {
+  background-color: #6B6D76;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.evaluate-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.evaluate-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
 }
