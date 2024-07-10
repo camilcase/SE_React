@@ -1,37 +1,43 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import users from '../../data/users';
 import './LoginPage.css';
+import axios from 'axios';
 
 function LoginPage() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    const user = users.find(
-      (u) => u.username === username && u.password === password
-    );
+    try {
+        const response = await axios.post(
+            "http://localhost:8000/login",
+            {
+                name,
+                password,
+            },
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                withCredentials: true,
+            }
+        );
 
-    if (user) {
-      switch (user.role) {
-        case 'pochead':
-          navigate('/pochead/dashboard');
-          break;
-        case 'collegepoc':
-          navigate('/class-management');
-          break;
-        case 'student':
-          navigate('/student/classroom');
-          break;
-        default:
-          alert('Role not recognized');
-      }
-    } else {
-      alert('Invalid username or password');
+        const { role } = response.data;
+        // console.log("Login response:", response.data);
+
+        console.log(role);
+        if (role){
+          navigate(`${role}/dashboard`);
+        }else{
+          console.log("error");
+        }
+    } catch (error) {
+        alert("error");
     }
-  };
+};
 
   return (
     <div className='login-page'>
@@ -48,8 +54,8 @@ function LoginPage() {
               type='text'
               id='username'
               placeholder='Username'
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className='input-group'>
